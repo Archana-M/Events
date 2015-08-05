@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "/meets" => "meets#index"
+  get "/meets/:id" => "meets#show"
+  root "meets#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

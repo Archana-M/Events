@@ -1,0 +1,19 @@
+
+<table>
+	<tr>
+		<th>Group</th>
+		<th>Date</th>
+		<th>Location</th>
+	</tr>
+
+	<tr>
+
+		<% @events.each do |event| %>
+			<td><a href="/meets/<%= event['id'] %>" ><%= event["group"] ["name"] %></a></td>
+
+			<td><%= event["utc_offset"] %></td>
+
+			<td><%= event["venue"] %></td>			
+	</tr>
+	<% end %>
+</table>

@@ -19,3 +19,8 @@ end
 group :test do
   gem 'capybara'
 end
+
+
+gem 'hirb'
+
+gem 'meetup_client'
